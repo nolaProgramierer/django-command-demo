@@ -48,7 +48,8 @@ Assuming that you have a newly scaffolded Django app here are the steps.
 4. Django will know where to look for the commands when you type the command in the terminal.
 
 In the *import_api_data.py* is the code for downloading data from this API and having it automatically populate the database. 
-*python manage.py import_api_data*.  
+
+*python manage.py import_api_data*  
 I've commented the file to explain the steps.
 
 If this method of downloading data is of benefit feel free to use any part of the code for you final project.
