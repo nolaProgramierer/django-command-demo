@@ -45,9 +45,9 @@ Assuming that you have a newly scaffolded Django app here are the steps.
 1. Within your app, make a folder named *management*.
 2. Within the *management* folder make a folder name *commands*
 3. With the *commands* folder make a file in which you'll define your custom command. e.g. *<my_custom_command.py>*
-4. By typing the custom command in the terminal, as you would any django management command, Django will know where to look for the commands in the folder and files you've written.
+4. By typing the custom command in the terminal, as you would any django management command, Django will know where to look for the commands.
 
-In the *import_api_data.py* in this repository is the code for downloading data from this API and having it automatically populate the database. *python manage.py import_api_data*
+In the *import_api_data.py* is the code for downloading data from this API and having it automatically populate the database. *python manage.py import_api_data*.  I've commented the file to basically explain the steps that may be of use for your particular project.
 
 Feel free to use any part of the code for you final project.
 
