@@ -4,7 +4,7 @@
 
 Let's say you're building an app where you want to have data from an external API populated in your database.  Instead of using JavaScript on the front-end you can use Django management commands to run a custom script. We can do this in Django by using the *requests* module and the *BaseCommand* module from *django.core.management.base*.  With these we can write a class which can query an external API, return the data, and write it to the database.  All from within Django.
 
-To be demonstrate this, I'll use a public API, [Nationalize.io](https://nationalize.io/documentation), (from Doug's list of APIs on ED).  This API returns data that estimates the nationality of a given name.  I've chosen this API as it return a simple object which is easily mapped to the Nationality model I've defiined in *models.py*.
+To be demonstrate this, I'll use a public API, [Nationalize.io](https://nationalize.io/documentation), (from Doug's list of APIs on ED).  This API returns data that estimates the nationality of a given name.  I've chosen this API as it returns a simple object which is easily mapped to the Nationality model I've defiined in *models.py*.
 
 ```
 
