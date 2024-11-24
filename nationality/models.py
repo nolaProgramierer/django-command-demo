@@ -12,3 +12,6 @@ class Nationality(models.Model):
     country_id = models.CharField(max_length=24)
     probability = models.DecimalField(max_digits=5, decimal_places=3)
 
+    def __str__(self):
+        return f"Country id: {self.country_id}, Probability: {self.probability}"
+
