@@ -54,6 +54,6 @@ In *import_api_data.py* is the code for downloading data from this API and havin
 
 I've commented the *management/commands/import_api_data.py* file to explain the steps.
 
-If this method of downloading data is of benefit feel free to use any part of the code for you final project.
+If this method of downloading data is of benefit feel free to use any part of the code for your final project.
 
 
