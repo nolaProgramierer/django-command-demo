@@ -3,8 +3,10 @@ from django.core.management.base import BaseCommand
 from nationality.models import Nationality
 
 class Command(BaseCommand):
+    # Document the command
     help = 'Fetch and populate nationality data from an API'
 
+    # Function which runs when command is called
     def handle(self, *args, **options):
         name = "smith"
         api_url = f"https://api.nationalize.io/?name={name}"
@@ -37,7 +39,7 @@ class Command(BaseCommand):
             nationality, created = Nationality.objects.update_or_create(
                 # Key used to find the existing record
                 country_id = country_id,
-                # If record exists, update attributes in 'defaults' dictionary
+                # Dictionary contains values for remaining model attributes
                 defaults = {"probability": probability}
             )
 
